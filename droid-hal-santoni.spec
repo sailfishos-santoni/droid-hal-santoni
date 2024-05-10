@@ -21,9 +21,9 @@
   /firmware \
   /persist \
   /product \
+  /bugreports \
+  /sdcard \
 %{nil}
-
-%define _unpackaged_files_terminate_build 0
 
 %include rpm/dhd/droid-hal-device.inc
 
