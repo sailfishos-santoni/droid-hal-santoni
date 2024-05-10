@@ -15,6 +15,16 @@
   #define WANT_ADRENO_QUIRKS 1 \
 %{nil}
 
+%define straggler_files \
+  /d \
+  /dsp \
+  /firmware \
+  /persist \
+  /product \
+%{nil}
+
+%define _unpackaged_files_terminate_build 0
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
